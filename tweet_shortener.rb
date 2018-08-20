@@ -15,9 +15,7 @@ end
 
 def word_substituter(tweet)
   tweet_array = tweet.split
-  dictionary_array = dictionary.keys
-  replacable_words = dictionary_array & tweet_array
-  dictionary.each do |key, value| tweet_array[key] &&= value
+
   
 end
     

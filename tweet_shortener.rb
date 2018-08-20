@@ -18,7 +18,7 @@ def word_substituter(tweet)
   tweet_array = tweet.split
 tweet_array.each_with_index do |string, index|
   dictionary.each_key do |word|
-    tweet_array[index].gsub!(word,dictionary[word]) if string == word
+    tweet_array[index].gsub!(word,dictionary[word]) if string == word || string == word.capitalize
   end
 end
   tweet_array.join(" ")

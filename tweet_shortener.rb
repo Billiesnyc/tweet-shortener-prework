@@ -15,7 +15,11 @@ end
 
 def word_substituter(tweet)
   tweet_array = tweet.split
-
+tweet_array.each_with_index do |string, index|
+  substitutions.each_key do |word|
+    arry[ind].gsub!(word,substitutions[word]) if str.include?(word)
+  end
+end
   
 end
     

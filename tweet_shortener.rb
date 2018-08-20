@@ -23,4 +23,3 @@ end
   tweet_array.join(" ")
 end
     
-end

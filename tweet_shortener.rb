@@ -44,6 +44,7 @@ def shortened_tweet_truncator(tweet)
     edited_tweet = bulk_tweet_shortener(tweet.split)
     if edited_tweet.length > 140
         final_tweet = "#{edited_tweet[0..136]} ..."
+        final_tweet
     else
       edited_tweet
     end

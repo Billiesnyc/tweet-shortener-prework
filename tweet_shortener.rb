@@ -47,7 +47,7 @@ def shortened_tweet_truncator(tweet)
         final_tweet = "#{joined_tweet[0..136]}..."
         final_tweet
       else
-        edited_tweet
+        joined_tweet
       end
   else
     tweet

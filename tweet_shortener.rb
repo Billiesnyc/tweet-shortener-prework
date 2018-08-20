@@ -16,8 +16,8 @@ end
 def word_substituter(tweet)
   tweet_array = tweet.split
 tweet_array.each_with_index do |string, index|
-  substitutions.each_key do |word|
-    arry[ind].gsub!(word,substitutions[word]) if str.include?(word)
+  dictionary.each_key do |word|
+    tweet_array[index].gsub!(word,dictionary[word]) if string.include?(word)
   end
 end
   

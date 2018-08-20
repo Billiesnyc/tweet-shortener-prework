@@ -42,9 +42,9 @@ end
 def shortened_tweet_truncator(tweet)
   if tweet.length > 140
     edited_tweet = bulk_tweet_shortener(tweet.split)
+    final_tweet = edited_tweet.join(" ")
     if edited_tweet.length > 140
-      final_tweet = edited_tweet.join(" ")
-      puts final_tweet[0..137] + "..."
+        puts final_tweet[0..137] + "..."
     else
       edited_tweet
     end

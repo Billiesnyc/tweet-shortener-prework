@@ -20,7 +20,7 @@ tweet_array.each_with_index do |string, index|
     tweet_array[index].gsub!(word,dictionary[word]) if string.include?(word)
   end
 end
-  
+  tweet_array.join(" ")
 end
     
 end

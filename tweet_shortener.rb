@@ -31,8 +31,7 @@ def bulk_tweet_shortener(tweets)
 end
 
 def selective_tweet_shortener(tweets)
-  split_tweet = tweets.split
-  if split_tweet.length > 140
+  if tweets.length > 140
    bulk_tweet_shortener(tweets)
   else 
     tweets 

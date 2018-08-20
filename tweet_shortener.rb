@@ -42,11 +42,10 @@ end
 def shortened_tweet_truncator(tweet)
   if tweet.length > 140
     edited_tweet = selective_tweet_shortener(tweet)
-    final_tweet = edited_tweet.join(" ")
-      if final_tweet.length > 140
+      if edited_tweet.length > 140
           puts "#{final_tweet[0..136]}..."
       else
-        final_tweet
+        edited_tweet.join("")
       end
   else
     tweet

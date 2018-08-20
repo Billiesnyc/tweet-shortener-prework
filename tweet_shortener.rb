@@ -33,7 +33,7 @@ end
 def selective_tweet_shortener(tweet)
   if tweet.length > 140
    edited_tweet = bulk_tweet_shortener(tweet.split)
-   edited_tweet
+   edited_tweet.join(" ")
   else 
     tweet
   end
